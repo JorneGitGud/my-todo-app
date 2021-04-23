@@ -1,22 +1,22 @@
 {
-    "tasks": [
-        {
-            "id": 1,
-            "title": "Creëer een to-do app",
-            "details": "Gebruik vue.js om een nette to-do app te maken",
-            "complete": false
-        },
-        {
-            "id": 2,
-            "title": "Vul de to-do app met taken",
-            "details": "Gebruik de to-do app om taken te maken",
-            "complete": false
-        },
-        {
-            "id": 3,
-            "title": "Reflecteer over de gemaakte to-do app",
-            "details": "Wat ging er goed? Wat ging niet zo lekker? Ideeën? Vertaalsag naar de toekomst?",
-            "complete": false
-        }
-    ]
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Creëer een to-do app",
+      "details": "Gebruik vue.js om een nette to-do app te maken",
+      "complete": false
+    },
+    {
+      "id": 2,
+      "title": "Vul de to-do app met taken",
+      "details": "Gebruik de to-do app om taken te maken",
+      "complete": true
+    },
+    {
+      "id": 3,
+      "title": "Reflecteer over de gemaakte to-do app",
+      "details": "Wat ging er goed? Wat ging niet zo lekker? Ideeën? Vertaalsag naar de toekomst?",
+      "complete": true
+    }
+  ]
 }
