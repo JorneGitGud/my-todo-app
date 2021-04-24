@@ -1,5 +1,5 @@
 <template>
-  <div class="task">
+  <div class="task taskTodo" :class="{taskDone: task.complete}">
     <div class="actions">
       <h3 @click="toggleDetails">{{ task.title }}</h3>
       <div class="icons">
@@ -11,7 +11,7 @@
         </span>
         <span class="material-icons">edit</span>
         <span @click="deleteTask" class="material-icons">delete</span>
-        <span @click="toggleComplete" class="material-icons">done</span>
+        <span @click="toggleComplete" class="material-icons" :class="{greenIcon : task.complete}">done</span>
       </div>
     </div>
     <div v-if="showDetails" class="details">
@@ -52,6 +52,9 @@ export default {
 </script>
 
 <style>
+.done{
+  background-color: aquamarine;
+}
 .actions {
   display: flex;
   justify-content: space-between;
@@ -63,7 +66,9 @@ export default {
   margin: 0.2rem;
   color: rgb(155, 154, 154);
 }
-
+.greenIcon{
+  color: #5cdd7c; 
+}
 .material-icons:hover {
   color: rgb(66, 66, 66);
 }
@@ -75,16 +80,23 @@ export default {
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   box-shadow: 0.4rem 0.8rem 1.2rem rgba(0, 0, 0, 0.05);
-  border-left: 0.5rem solid #5c90dd;
+  
 }
 .actions h3 {
   cursor: pointer;
 }
 
-.task {
-  background: linear-gradient(-45deg, #fafafa, #e73c7e0e, #ffffff, #23d5ab36);
+.taskTodo {
+  background: linear-gradient(-45deg, #fafafa, #3183e021, #ffffff, #237fd536);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
+  border-left: 0.5rem solid #5c90dd;
+}
+.taskDone {
+  background: linear-gradient(-45deg, #77d4a183, #00ff730e, #89ff6c57, #00fdc265);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  border-left: 0.5rem solid #5cdd7c;
 }
 
 @keyframes gradient {

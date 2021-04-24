@@ -10,13 +10,13 @@
       "id": 2,
       "title": "Vul de to-do app met taken",
       "details": "Gebruik de to-do app om taken te maken",
-      "complete": true
+      "complete": false
     },
     {
       "id": 3,
       "title": "Reflecteer over de gemaakte to-do app",
       "details": "Wat ging er goed? Wat ging niet zo lekker? Ideeën? Vertaalsag naar de toekomst?",
-      "complete": true
+      "complete": false
     }
   ]
 }
